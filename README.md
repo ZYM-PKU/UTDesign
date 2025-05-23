@@ -74,6 +74,7 @@ checkpoints/
 ## ▶️ Inference Pipelines
 ### Stylized text editing
 <p align="center"><img src="./assets/show_edit.png" width="100%"></p>
+
 - Run the following command to try stylized text editing on given examples:
 ```bash
 python test_edit.py
@@ -86,6 +87,7 @@ python test_edit.py --anno_path /path/to/your/json
 
 ### Full design image generation
 <p align="center"><img src="./assets/show_full_gen.png" width="100%"></p>
+
 - Run the following command to try full design image generation on given examples:
 ```bash
 python test_full_gen.py
