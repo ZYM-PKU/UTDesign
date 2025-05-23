@@ -109,7 +109,7 @@ Coming soon...
 
 ## 🎉 Acknowledgement
 - Datasets: We sincerely appreciate [Kingsoft](www.kingsoft.com) Corporation for providing part of the data with fine-grained annotations.
-- Code & Model: Our project is built based on the [diffusers](https://github.com/huggingface/diffusers) code base and we leverage the weights of [FLUX](https://github.com/black-forest-labs/flux) VAE.
+- Code & Model: Our project is built on the [diffusers](https://github.com/huggingface/diffusers) code base and we leverage the weights of [FLUX](https://github.com/black-forest-labs/flux) VAE.
 
 ### 🪬 Citation
 
