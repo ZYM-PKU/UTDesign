@@ -1,0 +1,12 @@
+### model
+model_name_or_path: Qwen/Qwen2.5-VL-7B-Instruct
+cache_dir: "{path to cache}"
+adapter_name_or_path: "{path to lora}"
+template: qwen2_vl
+finetuning_type: lora
+
+### export
+export_dir: "{path to output}"
+export_size: 5
+export_device: cpu
+export_legacy_format: false

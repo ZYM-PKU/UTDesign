@@ -1,0 +1,27 @@
+[
+    {
+        "idx": 0,
+        "image_path" : "./assets/images/case0.png",
+        "edited_text": "晚安地球"
+    },
+    {
+        "idx": 1,
+        "image_path" : "./assets/images/case1.png",
+        "edited_text": "夕阳红"
+    },
+    {
+        "idx": 2,
+        "image_path" : "./assets/images/case2.png",
+        "edited_text": "生日帖"
+    },
+    {
+        "idx": 3,
+        "image_path" : "./assets/images/case3.png",
+        "edited_text": "床前明月光低头思故乡"
+    },
+    {
+        "idx": 4,
+        "image_path" : "./assets/images/case4.png",
+        "edited_text": "今日份鲜奶"
+    }
+]

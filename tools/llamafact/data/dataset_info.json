@@ -1,0 +1,19 @@
+{
+  "identity": {
+    "file_name": "identity.json"
+  },
+  "stage1+2_train": {
+    "file_name": "stage1+2_train.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages",
+      "images": "images"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  }
+}

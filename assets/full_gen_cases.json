@@ -1,0 +1,60 @@
+[
+    {
+        "idx": 0,
+        "width": 720,
+        "height": 1280,
+        "caption": "The design emphasizes traditional Chinese culture and architectural elegance. \n\nVisually, it features a deep blue background with a stylized multi-tiered pagoda in red and gold tones. Cranes in flight, symbolizing harmony and longevity, are scattered across the design. The color palette combines rich blues, reds, and golds, giving it a luxurious and refined appearance. The overall style is traditional yet balanced, with smooth textures and clean patterns.",
+        "labels": [
+            "武汉站",
+            "诚邀创小客"
+        ],
+        "prompt": "Create a design image. The design emphasizes traditional Chinese culture and architectural elegance. \n\nVisually, it features a deep blue background with a stylized multi-tiered pagoda in red and gold tones. Cranes in flight, symbolizing harmony and longevity, are scattered across the design. The color palette combines rich blues, reds, and golds, giving it a luxurious and refined appearance. The overall style is traditional yet balanced, with smooth textures and clean patterns. Text to render: \"武汉站\", \"诚邀创小客\"."
+    },
+    {
+        "idx": 1,
+        "width": 800,
+        "height": 1070,
+        "caption": "The theme of the design is skincare tips, with a focus on providing easy-to-follow advice for better skin health. The design uses bright and vibrant colors like pink, green, and black, with playful and informal elements. The background features wavy pink patterns, and icons like arrows and a cartoon face add a dynamic and fun vibe. The layout is structured but lively with contrasting text boxes and symbols, giving it an engaging and approachable style.",
+        "labels": [
+            "护肤冷知识",
+            "记得收藏"
+        ],
+        "prompt": "Create a design image. The theme of the design is skincare tips, with a focus on providing easy-to-follow advice for better skin health. The design uses bright and vibrant colors like pink, green, and black, with playful and informal elements. The background features wavy pink patterns, and icons like arrows and a cartoon face add a dynamic and fun vibe. The layout is structured but lively with contrasting text boxes and symbols, giving it an engaging and approachable style. Text to render: \"护肤冷知识\", \"记得收藏\"."
+    },
+    {
+        "idx": 2,
+        "width": 800,
+        "height": 1800,
+        "caption": "The theme of the design is promoting an engaging French children's song live course for young learners.  \n\nThe visual style is clean and professional, using a white background with accents of yellow, green, and black for contrast and emphasis. The design incorporates modern, clear patterns with layered card-like elements. A smiling teacher is prominently featured, adding approachability and warmth. A cheerful cartoon character is included to appeal to children. The overall style is vibrant, friendly, and educational.",
+        "labels": [
+            "法语儿歌直播课程",
+            "5折起报班",
+            "周六直播",
+            "机构介绍"
+        ],
+        "prompt": "Create a design image. The theme of the design is promoting an engaging French children's song live course for young learners.  \n\nThe visual style is clean and professional, using a white background with accents of yellow, green, and black for contrast and emphasis. The design incorporates modern, clear patterns with layered card-like elements. A smiling teacher is prominently featured, adding approachability and warmth. A cheerful cartoon character is included to appeal to children. The overall style is vibrant, friendly, and educational. Text to render: \"法语儿歌直播课程\", \"5折起报班\", \"周六直播\", \"机构介绍\"."
+    },
+    {
+        "idx": 3,
+        "width": 800,
+        "height": 1070,
+        "caption": "The design focuses on promoting travel during holidays with a cheerful and informative theme, highlighting cultural exploration. The visual features a pastel grid background resembling a notebook, accented with warm colors like beige and light blue. The central image showcases historical architecture surrounded by greenery, emphasizing cultural heritage. Decorative elements include a cartoon-style goddess, vehicle icons, and playful illustrations of landmarks. The overall style is light, organized, and inviting.",
+        "labels": [
+            "假期旅行攻略",
+            "不踩雷的行程安排",
+            "建议收藏"
+        ],
+        "prompt": "Create a design image. The design focuses on promoting travel during holidays with a cheerful and informative theme, highlighting cultural exploration. The visual features a pastel grid background resembling a notebook, accented with warm colors like beige and light blue. The central image showcases historical architecture surrounded by greenery, emphasizing cultural heritage. Decorative elements include a cartoon-style goddess, vehicle icons, and playful illustrations of landmarks. The overall style is light, organized, and inviting. Text to render: \"假期旅行攻略\", \"不踩雷的行程安排\", \"建议收藏\"."
+    },
+    {
+        "idx": 4,
+        "width": 800,
+        "height": 1423,
+        "caption": "The design theme celebrates Valentine's Day with a focus on romantic and playful vibes. Visually, it features a soft pink fluffy heart at the center, surrounded by dynamic green and black graphic elements and orbit-like lines with small black hearts. The background is a gradient of soft blue with white sparkles, creating a dreamy and cheerful feel. The overall style is modern and vibrant, with smooth textures and lively accents.",
+        "labels": [
+            "情人节浪漫夜",
+            "直播抢先看"
+        ],
+        "prompt": "Create a design image. The design theme celebrates Valentine's Day with a focus on romantic and playful vibes. Visually, it features a soft pink fluffy heart at the center, surrounded by dynamic green and black graphic elements and orbit-like lines with small black hearts. The background is a gradient of soft blue with white sparkles, creating a dreamy and cheerful feel. The overall style is modern and vibrant, with smooth textures and lively accents. Text to render: \"情人节浪漫夜\", \"直播抢先看\"."
+    }
+]
