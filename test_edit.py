@@ -215,7 +215,7 @@ if __name__ == "__main__":
     parser.add_argument("--det_model_path", type=str, default="./checkpoints/tools/yolo.pt")
     parser.add_argument("--lama_model_path", type=str, default="./checkpoints/tools/big-lama")
     parser.add_argument("--ckpt_dir", type=str, default="./checkpoints/utdesign_l16+8_lora64_res256")
-    parser.add_argument("--cache_dir", type=str, default="/blob/pretrained/sd")
+    parser.add_argument("--cache_dir", type=str, default=None)
     parser.add_argument("--variant", type=str, default="")
     # dataset
     parser.add_argument("--std_font_path", type=str, default="./assets/NotoSansSC-Regular.ttf")

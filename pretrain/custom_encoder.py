@@ -65,7 +65,7 @@ class FusionModule(ModelMixin, ConfigMixin, PeftAdapterMixin, FromOriginalModelM
         dim_head: int = 256,
         clip_model_name: str = "openai/clip-vit-base-patch16",
         dino_model_name: str = "facebook/dinov2-large",
-        cache_dir: Optional[str] = "/blob/pretrained/clip",
+        cache_dir: Optional[str] = None,
     ):
         super().__init__()
         
@@ -194,29 +194,3 @@ class FusionModule(ModelMixin, ConfigMixin, PeftAdapterMixin, FromOriginalModelM
         cond_ids = (c_cond_ids, s_cond_ids)
 
         return content_embeds, style_embeds, pooled_style_embeds, cond_ids
-
-
-if __name__ == "__main__":
-
-    # Setup
-    content_images = [[Image.new('RGB', (224, 224), color='red')]*3, [Image.new('RGB', (224, 224), color='red')]*4]
-    style_images = [[Image.new('RGB', (224, 224), color='blue')]*5, [Image.new('RGB', (224, 224), color='blue')]*6]
-
-    clip_model_name = "openai/clip-vit-large-patch14" # "openai/clip-vit-base-patch16" "openai/clip-vit-base-patch32"
-    dino_model_name = "facebook/dinov2-large"
-    fuse_module = FusionModule(
-        clip_model_name=clip_model_name,
-        dino_model_name=dino_model_name,
-    )
-    fuse_module = fuse_module.to(device=torch.device("cpu"), dtype=torch.float32)
-
-    content_embeds, style_embeds, pooled_style_embeds, cond_ids = fuse_module(
-        content_images,
-        style_images,
-    )
-    print(content_embeds.shape)
-    print(style_embeds.shape)
-    print(pooled_style_embeds.shape)
-    c_cond_ids, s_cond_ids = cond_ids
-    print(c_cond_ids.shape)
-    print(s_cond_ids.shape)

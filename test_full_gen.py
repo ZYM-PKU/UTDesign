@@ -226,7 +226,7 @@ if __name__ == "__main__":
     parser.add_argument("--base_model", type=str, default="black-forest-labs/FLUX.1-dev")
     parser.add_argument("--planner_model", type=str, default="vllm_layout_planner")
     parser.add_argument("--ckpt_dir", type=str, default="./checkpoints/utdesign_l16+8_lora64_res256")
-    parser.add_argument("--cache_dir", type=str, default="/blob/pretrained/sd")
+    parser.add_argument("--cache_dir", type=str, default=None)
     parser.add_argument("--variant", type=str, default="")
     # dataset
     parser.add_argument("--std_font_path", type=str, default="./assets/NotoSansSC-Regular.ttf")
