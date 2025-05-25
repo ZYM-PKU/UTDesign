@@ -1,8 +1,8 @@
 <h2 align="center">UTDesign: A Unified Framework for Stylized Text Editing and Generation in Graphic Design Images</h2>
 <p align="center">
-  <a href=""><img src='https://img.shields.io/badge/arXiv-Paper-red?logo=arxiv&logoColor=white' alt='arXiv'></a>
-  <a href=''><img src='https://img.shields.io/badge/Project_Page-Website-green?logo=googlechrome&logoColor=white' alt='Project Page'></a>
-  <a href=''><img src='https://img.shields.io/badge/Model-Huggingface-yellow?logo=huggingface&logoColor=yellow' alt='Model'></a>
+  <a href=''><img src='https://img.shields.io/badge/arXiv-Paper-red?logo=arxiv&logoColor=white' alt='arXiv'></a>
+  <a href='https://utdesignv1.github.io/home/'><img src='https://img.shields.io/badge/Project_Page-Website-green?logo=googlechrome&logoColor=white' alt='Project Page'></a>
+  <a href='https://huggingface.co/UTDesign/UTDesign_v1.0'><img src='https://img.shields.io/badge/Model-Huggingface-yellow?logo=huggingface&logoColor=yellow' alt='Model'></a>
 
 <p align="center"><img src="./assets/teaser.jpg" width="100%"></p>
 
@@ -45,7 +45,7 @@ sudo docker run --name utdesign --gpus=all -it --ipc=host --network=host -v /you
 ## ⬇️ Download Model Weights
 Download the checkpoints using `Huggineface CLI`:
 ```
-huggingface-cli download xxx --local-dir checkpoints
+huggingface-cli download UTDesign/UTDesign_v1.0 --local-dir checkpoints
 ```
 
 The downloaded checkpoints should be organized as follows:
@@ -72,6 +72,12 @@ checkpoints/
 
 
 ## ▶️ Inference Pipelines
+### Layout Planner
+- First of all, deploy the layout planner on gpu `{your gpu id}` of your local machine:
+```
+sudo docker run --gpus=all zympku/llamafact:v4_release /bin/bash -c "CUDA_VISIBLE_DEVICES={your gpu id} vllm serve pretrained/stage1+2_grpo1_800 --port 8000 --served-model-name vllm_layout_planner --max-model-len 10000 --trust-remote-code --limit-mm-per-prompt image=1"
+```
+
 ### Stylized text editing
 <p align="center"><img src="./assets/show_edit.png" width="100%"></p>
 
