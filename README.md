@@ -75,7 +75,7 @@ checkpoints/
 ### Layout Planner
 - First of all, deploy the layout planner on gpu `{your gpu id}` of your local machine:
 ```
-sudo docker run --gpus=all zympku/llamafact:v4_release /bin/bash -c "CUDA_VISIBLE_DEVICES={your gpu id} vllm serve pretrained/stage1+2_grpo1_800 --port 8000 --served-model-name vllm_layout_planner --max-model-len 10000 --trust-remote-code --limit-mm-per-prompt image=1"
+sudo docker run --gpus=all zympku/vllm:v1_release /bin/bash -c "CUDA_VISIBLE_DEVICES={your gpu id} vllm serve stage1+2_grpo1_800 --port 8000 --served-model-name vllm_layout_planner --max-model-len 10000 --trust-remote-code --limit-mm-per-prompt image=1"
 ```
 
 ### Stylized text editing
