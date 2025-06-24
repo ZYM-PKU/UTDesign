@@ -19,7 +19,7 @@
 ## 🚧 TODO List
 - [x] Release inference pipelines.
 - [x] Release gradio demo.
-- [ ] Release training instructions.
+- [x] Release training instructions.
 
 
 <!-- Environment Setup -->
@@ -111,7 +111,52 @@ python app.py
 ```
 
 ## 🧪 Training Instructions
-Coming soon...
+### Train the transparency VAE
+- Fill in the required fields of the config file and run the following command to train the transparency VAE:
+```bash
+accelerate launch --config_file accelerate_cfg/1m4g_fp16.yaml \
+    trans_vae/train.py trans_vae/config/sft_skip_connect_bs32_lr1e-5_res512.py
+```
+
+### Stage1: pre-train
+- First, fill in the required fields of the config file and run the following command to train on gray-scale fonts:
+```bash
+accelerate launch --config_file accelerate_cfg/1m4g_fp16.yaml \
+    pretrain/train.py pretrain/config/tfs_l16+8_prodigy_bs16_lr1_res256.py
+```
+
+- Then, fill in the required fields of the config file and run the following command to train on colored fonts with augmentation:
+```bash
+accelerate launch --config_file accelerate_cfg/1m4g_fp16.yaml \
+    pretrain/train.py pretrain/config/tfs_l16+8_prodigy_bs16_lr1_res256_colored.py
+```
+
+- Finally, fill in the required fields of the config file and run the following command to fine-tune the model on the design image dataset:
+```bash
+accelerate launch --config_file accelerate_cfg/1m4g_fp16.yaml \
+    utdesign/train_lora_editing.py utdesign/config/te_JP+CP+YP+TP_filter_l16+8_prodigy_bs16_lr1_res256.py
+```
+
+### Stage2: Alignment
+- Fill in the required fields of the config file and run the following command to conduct feature alignment:
+```bash
+accelerate launch --config_file accelerate_cfg/1m4g_fp16.yaml \
+    utdesign/train_fusion.py utdesign/config/tf_JP+CP+YP+TP_filter_3B_seq8_l2_prodigy_bs4_lr1.py
+```
+
+### Stage3: post-train
+- First, fill in the required fields of the config file and run the following command to fine-tune the model:
+```bash
+accelerate launch --config_file accelerate_cfg/1m4g_fp16.yaml \
+    utdesign/train_lora.py utdesign/config/sft_JP+CP+YP+TP_filter_l16+8_lora_r64_prodigy_bs4_lr1e5_res256.py
+```
+
+- Then, fill in the required fields of the config file and run the following command to conduct Diffusion-DPO:
+```bash
+accelerate launch --config_file accelerate_cfg/1m4g_fp16.yaml \
+    utdesign/train_lora_dpo.py utdesign/config/dpo_JP+CP+YP+TP_filter_l16+8_lora_r64_prodigy_bs4_lr1_res256.py
+```
+
 
 ## 🎉 Acknowledgement
 - Datasets: We sincerely appreciate [Kingsoft](www.kingsoft.com) Corporation for providing part of the data with fine-grained annotations.
