@@ -1,7 +1,7 @@
 <h2 align="center">UTDesign: A Unified Framework for Stylized Text Editing and Generation in Graphic Design Images</h2>
 <p align="center">
   <a href=''><img src='https://img.shields.io/badge/arXiv-Paper-red?logo=arxiv&logoColor=white' alt='arXiv'></a>
-  <a href='https://utdesignv1.github.io/home/'><img src='https://img.shields.io/badge/Project_Page-Website-green?logo=googlechrome&logoColor=white' alt='Project Page'></a>
+  <a href='https://utdesign-official.github.io/home/'><img src='https://img.shields.io/badge/Project_Page-Website-green?logo=googlechrome&logoColor=white' alt='Project Page'></a>
   <a href='https://huggingface.co/UTDesign/UTDesign_v1.0'><img src='https://img.shields.io/badge/Model-Huggingface-yellow?logo=huggingface&logoColor=yellow' alt='Model'></a>
 
 <p align="center"><img src="./assets/teaser.jpg" width="100%"></p>
