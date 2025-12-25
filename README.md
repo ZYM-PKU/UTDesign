@@ -165,4 +165,11 @@ accelerate launch --config_file accelerate_cfg/1m4g_fp16.yaml \
 ### 🪬 Citation
 
 ```
+@inproceedings{zhao2025utdesign,
+  title={UTDesign: A Unified Framework for Stylized Text Editing and Generation in Graphic Design Images},
+  author={Zhao, Yiming and Gao, Yuanpeng and Luo, Yuxuan and Duan, Jiwei and Lin, Shisong and Xiong, Longfei and Lian, Zhouhui},
+  booktitle={Proceedings of the SIGGRAPH Asia 2025 Conference Papers},
+  pages={1--11},
+  year={2025}
+}
 ```
