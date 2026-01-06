@@ -1,6 +1,15 @@
 <h2 align="center">UTDesign: A Unified Framework for Stylized Text Editing and Generation in Graphic Design Images</h2>
+
 <p align="center">
-  <a href=''><img src='https://img.shields.io/badge/arXiv-Paper-red?logo=arxiv&logoColor=white' alt='arXiv'></a>
+  Yiming Zhao<sup>1</sup>, Yuanpeng Gao<sup>1</sup>, Yuxuan Luo<sup>1</sup>, Jiwei Duan<sup>2</sup>, Shisong Lin<sup>2</sup>, Longfei Xiong<sup>2</sup>, Zhouhui Lian<sup>1†</sup>
+  <br>
+  <sup>1</sup>Wangxuan Institute of Computer Technology, Peking University, <sup>2</sup>Kingsoft Office
+  <br>
+  <sup>†</sup>Corresponding author
+</p>
+
+<p align="center">
+  <a href='https://arxiv.org/abs/2512.20479'><img src='https://img.shields.io/badge/arXiv-Paper-red?logo=arxiv&logoColor=white' alt='arXiv'></a>
   <a href='https://utdesign-official.github.io/home/'><img src='https://img.shields.io/badge/Project_Page-Website-green?logo=googlechrome&logoColor=white' alt='Project Page'></a>
   <a href='https://huggingface.co/UTDesign/UTDesign_v1.0'><img src='https://img.shields.io/badge/Model-Huggingface-yellow?logo=huggingface&logoColor=yellow' alt='Model'></a>
 

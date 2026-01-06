@@ -210,8 +210,12 @@ def edit_image(input_image, text, cfg, lambda_gate, seed):
         return inpainted_image, None
     
     if len(text) != len(target_s_bboxs):
-        target_s_bboxs = arrange_bboxs(crop_bbox, len(text))
-    
+        # target_s_bboxs = arrange_bboxs(crop_bbox, len(text))
+        cropped_image = inpainted_image.crop(crop_bbox)
+        x_offset, y_offset = crop_bbox[:2]
+        target_s_bboxs = get_layout_plan_stage2(pl_client, args.planner_model, list(text), cropped_image)
+        target_s_bboxs = [[bbox[0]+x_offset, bbox[1]+y_offset, bbox[2]+x_offset, bbox[3]+y_offset] for bbox in target_s_bboxs]
+
     _, c_refs_w_pil, _ = render_chs(list(text), font_path=args.std_font_path, resolution=args.resolution)
 
     generator.manual_seed(seed)
